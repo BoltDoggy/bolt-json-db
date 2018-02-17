@@ -1,9 +1,11 @@
 {
   "name": "bolt-json-db",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "⚡️ Persistence JSON without active save.",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d lib",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,10 @@
     "jsonfile": "^4.0.0",
     "mkdirp": "^0.5.1",
     "vue": "^2.5.13"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }

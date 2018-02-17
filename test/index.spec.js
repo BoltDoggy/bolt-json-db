@@ -13,3 +13,7 @@ db2.a.b = 3;
 
 db3.a = [];
 db3.a.push(1);
+db3.a.push({
+    b: 3
+});
+db3.a[1].b = 4;
