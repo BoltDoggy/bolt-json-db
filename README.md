@@ -52,3 +52,8 @@ db3.a[2] = 2; // wrong, because can't listen setter of db3.a[2]
 ```
 
 you’ll need to set some initial value.
+
+## Next
+
+- [ ] support Circular - https://github.com/WebReflection/circular-json
+- [ ] support JSON Schema - https://github.com/fastify/fast-json-stringify
