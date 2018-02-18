@@ -1,4 +1,4 @@
-# bolt-json-db [![npm](https://img.shields.io/npm/v/bolt-json-db.svg)](https://www.npmjs.com/package/bolt-json-db) [![david-dm](https://david-dm.org/BoltDoggy/bolt-json-db.svg)](https://david-dm.org/lc60005457/bolt-json-db)
+# bolt-json-db [![npm](https://img.shields.io/npm/v/bolt-json-db.svg)](https://www.npmjs.com/package/bolt-json-db) [![david-dm](https://david-dm.org/BoltDoggy/bolt-json-db.svg)](https://david-dm.org/BoltDoggy/bolt-json-db)
 ⚡️ Persistence JSON without active save.
 
 ## Usage
