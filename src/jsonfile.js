@@ -1,5 +1,3 @@
-const CircularJSON = require('circular-json');
-
 var _fs
 try {
     _fs = require('graceful-fs')
@@ -32,7 +30,9 @@ function readFile(file, options, callback) {
 
         var obj
         try {
-            obj = CircularJSON.parse(data, options ? options.reviver : null)
+            obj = options.parse ?
+                options.parse(data, options ? options.reviver : null) :
+                JSON.parse(data, options ? options.reviver : null)
         } catch (err2) {
             if (shouldThrow) {
                 err2.message = file + ': ' + err2.message
@@ -62,7 +62,9 @@ function readFileSync(file, options) {
     try {
         var content = fs.readFileSync(file, options)
         content = stripBom(content)
-        return CircularJSON.parse(content, options.reviver)
+        return options.parse ?
+            options.parse(data, options ? options.reviver : null) :
+            JSON.parse(data, options ? options.reviver : null)
     } catch (err) {
         if (shouldThrow) {
             err.message = file + ': ' + err.message
@@ -85,7 +87,9 @@ function stringify(obj, options) {
         }
     }
 
-    var str = CircularJSON.stringify(obj, options ? options.replacer : null, spaces)
+    var str = options.stringify ?
+        options.stringify(obj, options ? options.replacer : null, spaces) :
+        JSON.stringify(obj, options ? options.replacer : null, spaces)
 
     return str.replace(/\n/g, EOL) + EOL
 }

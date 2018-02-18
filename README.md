@@ -55,6 +55,9 @@ you’ll need to set some initial value.
 
 ## Next
 
+```
+npm i bolt-json-db@beta
+```
+
 - [x] support Circular - https://github.com/WebReflection/circular-json
-    - `npm i bolt-json-db@beta`
-- [ ] support JSON Schema - https://github.com/fastify/fast-json-stringify
+- [x] support JSON Schema - https://github.com/fastify/fast-json-stringify

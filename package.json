@@ -1,6 +1,6 @@
 {
   "name": "bolt-json-db",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "⚡️ Persistence JSON without active save.",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   "dependencies": {
     "circular-json": "^0.5.1",
     "debug": "^3.1.0",
+    "fast-json-stringify": "^1.1.0",
     "jsonfile": "^4.0.0",
     "mkdirp": "^0.5.1",
     "vue": "^2.5.13"
