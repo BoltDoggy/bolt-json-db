@@ -1,11 +1,12 @@
 const path = require('path');
 
 const Debug = require('debug');
-const jsonfile = require('jsonfile');
+// const jsonfile = require('jsonfile');
 const mkdirp = require('mkdirp');
 const Vue = require('vue');
 
 const asyncDebounce = require('./asyncDebounce');
+const jsonfile = require('./jsonfile');
 
 const debug = Debug('bolt-json-db:Data');
 
